@@ -20,15 +20,4 @@ function url_for($script_path) {
     return WWW_ROOT . $script_path;
 }
 
-/**
- * @param $node_modules
- * @return string
- */
-function node_module($node_modules) {
-    // leading ./ if not present.
-    if ($node_modules[0] != './') {
-        $node_modules = './' . $node_modules;
-    }
-    return $node_modules;
-}
 //*************************************************************
