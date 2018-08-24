@@ -1,0 +1,19 @@
+.hook {color: black;}
+
+.tools { /* Gary's Tool List TITLE */
+  font-family: $font-stack-family;
+  font-size: $logo-font;
+
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.info, .tool-info { @include font-pad; font-size: 1.2em; padding: 1em 0.75em;}
+
+.box-blade-width { width: 12.500em; }
+
+
+.listing {
+  list-style-type: none;
+}
+
+.sale { text-decoration-line: underline; }

@@ -1,0 +1,16 @@
+
+// basic sizing. and boz sizing.
+root { font-size: 16px; }
+html {
+  @include box-size;
+}
+
+* { @include box-size;
+
+  &:before { @include box-size; }
+
+
+  &:after { @include box-size;  }
+}
+
+ol { /* bread crumb */  li { font-size: 1.5em; }  }

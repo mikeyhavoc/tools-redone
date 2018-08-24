@@ -1,0 +1,21 @@
+
+
+.image { max-width: 28.125em; min-width: 12.500em; padding-top: 0; }
+.box-image-width { width: $mini-image-size;  }
+.box-blade-width { width: $mini-image-size-blade; }
+.box-image-height { height: $mini-image-size; }
+.thumbnail { padding: 0; }
+
+.card {
+  background: $card-background; border-radius: $global-border;
+  border: 1px solid red; margin-left: auto;
+  margin-right: auto; margin-bottom: $card-bottom-margin;
+  width: $global-width;
+  padding: $card-inside-padding;
+}
+
+.cards { width: 100%; margin-bottom: 1em; }
+
+.card-holder { display: flex; flex-wrap: wrap}
+.catalog-images { max-width: $global-width; }
+.half { width: $global-width / 2; border-radius: $global-border; }
