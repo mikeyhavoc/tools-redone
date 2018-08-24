@@ -20,15 +20,17 @@ function url_for($script_path) {
     return WWW_ROOT . $script_path;
 }
 
-function get_item_html($item) {
-    $output = "<li><a href='details.php?id="
-        . $item['t_id'] . "'><img src='"
+function get_image_html($item) {
+    $output = "<a class='text-center' href='details.php?id="
+        . $item['t_id'] . "'><img class='random-images img-responsive rounded' src='public/"
         . $item["image"] . "' alt='"
         . $item["item_name"] . "' />"
         . "<p>View Details</p>"
-        . "</a></li>";
+        . "</a>";
     return $output;
 } // end get_item_html
+
+
 
 //*************************************************************
 
@@ -37,18 +39,17 @@ function random_catalog_array()
     include 'connection.php';
 
     try {
-        $sql = 'SELECT t.id, t.item_name, t.sale_price, t.sold,
+        $results = $db->query("SELECT t.t_id, t.item_name, t.sale_price, t.sold,
                 i.image 
                 FROM Tools as t
-                JOIN Images as i 
-                Order BY RAND() LIMIT 4';
-
-        $results = $db->query($sql);
+                JOIN Images as i
+                ON t.t_id = i.t_id 
+                Order BY RAND() LIMIT 3");
 
     } catch (Exception $e) {
         echo 'unable to retrieve random 4';
         exit;
     }
-        $catalog = $results->fetchAll(PDO::FETCH_ASSOC);
+        $catalog = $results->fetchAll();
       return $catalog;
 }
