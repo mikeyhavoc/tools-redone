@@ -62,7 +62,7 @@ $page_title = "Gary's Tools Site";
 
 
 <?php require(SHARED_PATH . '/nav.php'); ?>
-<main>
+<main role="main">
     <div class="container-fluid">
 
     <div class="row">
