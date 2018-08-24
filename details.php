@@ -5,6 +5,7 @@
  * Date: 8/24/18
  * Time: 3:09 PM
  */
+include "private/boilerplate.php";
 $pageTitle = 'Details'; ?>
 
     <!doctype html>
