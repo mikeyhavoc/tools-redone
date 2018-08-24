@@ -6,7 +6,7 @@
  * Time: 3:09 PM
  */
 ?>
-<?php require_once 'private/initialize.php';
+<?php require_once 'private/boilerplate.php';
 use PHPMailer\PHPMailer\PHPMailer;
 require 'vendor/autoload.php';
 //Create a new PHPMailer instance
