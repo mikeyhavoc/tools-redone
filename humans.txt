@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    manic development, mikeyjwilliams.com, garystools.mikeyjwilliams.com -> Michael Williams.
+    garystools.mikeyjwilliams.com  -> Gary Williams
+
+# THANKS
+
+    TeamTreehouse, Stackoverflow, 'Your Common Sense', Twitter Bootstrap, Html5 creators,
+    css3 creators, Jquery team, javascript team,
+
+# TECHNOLOGY COLOPHON
+
+    PHP, MySQL, HTML5, CSS3, Javascript
+    jQuery, bootstrap.v.4.0.0 ,
