@@ -95,57 +95,27 @@ $page_title = "Gary's Tools Site";
     </div>
     <div class="container-fluid">
         <div class="row">
+            <?php
+            $categories = random_catalog_array();
+            foreach ( $categories as $item) { ?>
             <div class="col-12 col-sm-6 col-md-4">
-                <article role="article" class="card">
 
-                    <h2 class="text-center">
-                        <a class="btn btn-lg btn-outline-danger" href="<?php echo url_for( 'catalog.php?cat=sockets'); ?>" >
-                            Sockets
-                        </a>
-                    </h2>
-                    <p class="text-center">
-                        Tool Type: Sockets.<br>
-                    </p>
-                    <a href="<?php echo url_for( 'catalog.php?cat=sockets'); ?>">
-                        <img class="catalog-images center-block img-responsive img-rounded" src="<?php echo  IMAGES . '/img/socket/i322-socket-1.jpg'; ?>" >
-                    </a>
+                <article role="article" class="card text-center">
+
+                        <?php  echo get_image_html($item); ?>
+
+                   <div class="inner-card">
+                        Item one<br>
+                        $3.99<br>
+                        for sale
+                    </div>
+
+
+
                 </article>
+
             </div><!--/ item one -->
-            <div class="col-sm-6 col-md-4">
-                <article role="article" class="card">
-
-                    <h3 class="text-center">
-                        <a class="btn btn-lg btn-outline-danger" href="<?php echo url_for( 'catalog.php?cat=wrenches'); ?>" >
-                            Wrenches
-                        </a>
-                    </h3>
-                    <p class="text-center">
-                        Tool Type: Mostly wrench sets some singles.<br>
-                    </p>
-                    <a href="<?php echo url_for( 'catalog.php?cat=wrenches'); ?>">
-                        <img class="catalog-images center-block img-responsive img- img-rounded" src="<?php echo IMAGES . '/img/wrench/a2-wrench.jpg'; ?>" >
-                    </a>
-                </article>
-            </div><!--/ item one -->
-
-
-
-            <div class="col-sm-6 col-md-4">
-                <article role="article" class="card">
-
-                    <h3 class="text-center">
-                        <a class="btn btn-lg btn-outline-danger" href="<?php echo url_for( 'catalog.php?cat=air-tools'); ?>" >
-                            Air Tools
-                        </a>
-                    </h3>
-                    <p class="text-center">
-                        Tool Type: Air drills, etc.<br>
-                    </p>
-                    <a href="<?php echo url_for( 'catalog.php?cat=air-tools'); ?>">
-                        <img class="catalog-images center-block img-rounded" src="<?php echo  IMAGES . '/img/air/b48-air.jpg'; ?>" >
-                    </a>
-                </article>
-            </div>
+            <?php } ?>
         </div>
     </div>
 </main>
