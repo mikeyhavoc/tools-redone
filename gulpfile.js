@@ -1,17 +1,17 @@
-import gulp from "gulp";
-import sass from "gulp-sass";
-import gutil from "gulp-util";
-import image from "gulp-image";
-import newer from "gulp-newer";
-import debug from "gulp-debug";
-import series from "gulp-series";
-import rigger from "gulp-rigger";
-import notify from "gulp-notify";
-import browserSync from "browser-sync";
-import sourcemaps from "gulp-sourcemaps";
-import {phpMinify} from "@cedx/gulp-php-minify";
-import imageOptim from "gulp-imageoptim";
-import htmlclean from "gulp-htmlclean";
+const gulp   = require("gulp");
+const sass   =require("gulp-sass");
+const gutil  = require("gulp-util");
+const image   = require("gulp-image");
+const newer   = require("gulp-newer");
+const debug   = require("gulp-debug");
+const series   = require("gulp-series");
+const rigger   = require("gulp-rigger");
+const notify   = require("gulp-notify");
+const browserSync   = require("browser-sync");
+const sourcemaps   = require("gulp-sourcemaps");
+const {phpMinify}   = require("@cedx/gulp-php-minify");
+const imageOptim   = require("gulp-imageoptim");
+const htmlclean   = require("gulp-htmlclean");
 
 const paths = {
     src: 'src/**/*',
@@ -46,10 +46,10 @@ const paths = {
 // });
 
 
-gulp.task('sass', function () {
-    return gulp.src('.src/public/sass/**/*.scss')
+gulp.task('scss', function () {
+    return gulp.src('public/sass/main.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('.src/public/css'));
+        .pipe(gulp.dest('public/css'));
 });
 
 
