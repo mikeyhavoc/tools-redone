@@ -14,8 +14,11 @@
   padding: $card-inside-padding;
 }
 
-.cards { width: 100%; margin-bottom: 1em; }
+.cards { width: $global-width; margin-bottom: 1em; }
 
-.card-holder { display: flex; flex-wrap: wrap}
+.inner-card { max-width: 50%; }
+.inner-card img { display: inline-block; }
+.card-holder { display: flex; flex-wrap: no-wrap}
 .catalog-images { max-width: $global-width; }
+.random-images { max-width: 300px; max-height: 300px;}
 .half { width: $global-width / 2; border-radius: $global-border; }
