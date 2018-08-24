@@ -54,12 +54,22 @@ ol {
   width: 100%;
   margin-bottom: 1em; }
 
+.inner-card {
+  max-width: 50%; }
+
+.inner-card img {
+  display: inline-block; }
+
 .card-holder {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: no-wrap; }
 
 .catalog-images {
   max-width: 100%; }
+
+.random-images {
+  max-width: 300px;
+  max-height: 300px; }
 
 .half {
   width: 50%;
@@ -132,62 +142,52 @@ div .bottom-drop:first-child {
     width: 100%;
     margin-right: 0;
     margin-left: 0; }
-
   .select-width {
     width: 63%;
     margin-left: 1em;
     margin-right: 0; }
-
   .b-width {
     width: 90%; }
-
   .b-right {
     margin-left: 1.5em; }
-
   .b-left {
     margin-right: 1.5em; }
-
   .cat-order-name {
     order: 1; }
-
   .cat-order-code {
     order: 2;
     /*padding-bottom: 0.25em;*/ }
-
   .cat-order-image {
     order: 3;
     padding-top: 1.2em; }
-
   .cat-order-price {
     order: 5;
     padding-top: 0.5em; }
-
   .cat-order-sold {
     order: 6; }
-
   .cat-order-btn {
     order: 4; } }
+
 @media screen and (min-width: 38.438em) {
   .mobile-s {
     display: flex;
     flex-direction: row; }
-
   .info {
     width: 50%; }
-
   .tool-info {
     width: 100%; } }
+
 @media screen and (min-width: 40.563em) {
   .col-ssm-6 {
     justify-content: space-around; } }
+
 .privacy__box {
   margin: 0 2em 1.5em; }
 
 @media (min-width: 470px) {
   .privacy__box {
     margin: 0 8em 2em 8em; } }
+
 @media (min-width: 991px) {
   .privacy__box {
     margin: 0 10em 2em 10em; } }
-
-/*# sourceMappingURL=main.css.map */
