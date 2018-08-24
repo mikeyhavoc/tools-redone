@@ -5,7 +5,7 @@
  * Date: 8/24/18
  * Time: 2:41 PM
  */
-
+require_once 'private/boilerplate.php';
 $page_title = "Gary's Tools Site";
 
 ?>
