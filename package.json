@@ -1,0 +1,51 @@
+{
+  "name": "php-tools",
+  "version": "1.0.0",
+  "description": "tools site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeyhavoc/php_tools.git"
+  },
+  "author": "michael williams",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikeyhavoc/php_tools/issues"
+  },
+  "homepage": "https://github.com/mikeyhavoc/php_tools#readme",
+  "devDependencies": {
+    "@cedx/gulp-php-minify": "^7.1.1",
+    "browser-sync": "^2.23.6",
+    "eslint": "^4.19.1",
+    "gulp": "^4.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-copy": "^1.1.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-htmlclean": "^2.7.16",
+    "gulp-image": "^4.2.0",
+    "gulp-imageoptim": "^1.0.9",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^4.0.1",
+    "gulp-series": "^1.0.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-util": "^3.0.8",
+    "prettier": "^1.14.2"
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.3"
+  }
+}
